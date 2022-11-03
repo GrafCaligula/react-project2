@@ -1,0 +1,29 @@
+.hero-wrapper {
+  margin-top: 70px;
+  padding: 25px 0px;
+}
+
+.hero-img {
+  width: 396px;
+  margin: 0px 77px;
+}
+
+.hero-text-section {
+  font-family: "Poppins", sans-serif;
+  padding-left: 36px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  color: #000000;
+}
+
+.hero-txt {
+  width: 320px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+  color: #222222;
+}
