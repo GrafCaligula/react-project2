@@ -1,28 +1,30 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
+import data from "./data";
 
 export default function App() {
+  const cardData = data.map((infos) => {
+    return (
+      <Card
+        key={infos.id}
+        img={infos.coverImg}
+        rating={infos.stats.rating}
+        reviewCount={infos.stats.reviewCount}
+        country={infos.location}
+        title={infos.title}
+        price={infos.price}
+      />
+    );
+  });
+
+  console.log(data);
+
   return (
     <div>
       <Navbar />
       <Hero />
-      <Card
-        img="zaferes.png"
-        rating={5.0}
-        reviewCount={6}
-        country="USA"
-        title="Life lessons with Katie Zaferes"
-        price={136}
-      />
-      <Card
-        img="wedding.png"
-        rating={5.0}
-        reviewCount={30}
-        country="USA"
-        title="Learning wedding photography"
-        price={125}
-      />
+      {cardData}
     </div>
   );
 }
