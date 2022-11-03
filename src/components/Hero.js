@@ -3,7 +3,7 @@ import image from "./images/heroimg.png";
 
 export default function Hero() {
   return (
-    <div className="hero-wrapper">
+    <section className="hero-wrapper">
       <img src={image} alt="images" className="hero-img" />
       <div className="hero-text-section">
         <h1 className="hero-title">Online Experiences</h1>
@@ -12,6 +12,6 @@ export default function Hero() {
           without leaving home.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

@@ -6,6 +6,7 @@
 .hero-img {
   width: 396px;
   margin: 0px 77px;
+  max-width: 400px;
 }
 
 .hero-text-section {
@@ -18,11 +19,12 @@
   font-size: 36px;
   line-height: 110%;
   color: #000000;
+  margin-bottom: 16px;
 }
 
 .hero-txt {
   width: 320px;
-  font-weight: 300;
+  margin-top: 0px;
   font-size: 16px;
   line-height: 110%;
   color: #222222;
