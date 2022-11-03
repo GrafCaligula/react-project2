@@ -6,3 +6,7 @@ import "./index.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
+
+let set = new Set("obj");
+
+console.log(set);
