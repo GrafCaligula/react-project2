@@ -6,16 +6,17 @@ import data from "./data";
 export default function App() {
 
   const cardData = data.map((infos) => {
-    
+
     return (
       <Card
         key={infos.id}
         img={infos.coverImg}
         rating={infos.stats.rating}
         reviewCount={infos.stats.reviewCount}
-        country={infos.location}
+        location={infos.location}
         title={infos.title}
         price={infos.price}
+        openSpots={infos.openSpots}
       />
     );
   });
@@ -23,7 +24,7 @@ export default function App() {
   // console.log(data);
 
   return (
-    <div>
+    <div className="app">
       <Navbar />
       <Hero />
       {cardData}
