@@ -4,7 +4,9 @@ import Card from "./components/Card";
 import data from "./data";
 
 export default function App() {
+
   const cardData = data.map((infos) => {
+    
     return (
       <Card
         key={infos.id}
@@ -18,7 +20,7 @@ export default function App() {
     );
   });
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div>
