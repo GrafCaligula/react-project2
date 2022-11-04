@@ -5,18 +5,21 @@ import data from "./data";
 
 export default function App() {
 
-  const cardData = data.map((infos) => {
+  const cardData = data.map((item) => {
 
     return (
       <Card
-        key={infos.id}
-        img={infos.coverImg}
-        rating={infos.stats.rating}
-        reviewCount={infos.stats.reviewCount}
-        location={infos.location}
-        title={infos.title}
-        price={infos.price}
-        openSpots={infos.openSpots}
+        key={item.id}
+        {...item}
+        // infos={infos}
+
+        // img={infos.coverImg}
+        // rating={infos.stats.rating}
+        // reviewCount={infos.stats.reviewCount}
+        // location={infos.location}
+        // title={infos.title}
+        // price={infos.price}
+        // openSpots={infos.openSpots}
       />
     );
   });
